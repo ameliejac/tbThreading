@@ -20,11 +20,10 @@ int part = 0;
 
 
 int array_to_sort1[MAX];
-int part = 0;
+int part1 = 0;
 
 
 
-//NYTT
 
 
 //Metod som byter två tal
@@ -101,6 +100,7 @@ int main()
 
 
 
+    //NYTT
 
 
     //Fyll arrayen med slumpade tal mellan 0 - 99
@@ -118,6 +118,8 @@ int main()
 
     thread a = thread(bubbleSort, array_to_sort1, 0, 4);
     thread a2 = thread(bubbleSort, array_to_sort1, 5, 9);
+    thread a3 = thread(bubbleSort, array_to_sort, 10, 14);
+    thread a4 = thread(bubbleSort, array_to_sort, 15, MAX);
  
 
 
